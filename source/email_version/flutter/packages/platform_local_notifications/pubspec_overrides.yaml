@@ -1,0 +1,4 @@
+# melos_managed_dependency_overrides: quick_notify
+dependency_overrides:
+  quick_notify:
+    path: quick_notify

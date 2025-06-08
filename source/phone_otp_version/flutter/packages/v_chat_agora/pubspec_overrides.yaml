@@ -1,0 +1,12 @@
+# melos_managed_dependency_overrides: platform_local_notifications,quick_notify,s_translation,super_up_core,v_chat_sdk_core
+dependency_overrides:
+  platform_local_notifications:
+    path: ../platform_local_notifications
+  quick_notify:
+    path: ../platform_local_notifications/quick_notify
+  s_translation:
+    path: ../s_translation
+  super_up_core:
+    path: ../super_up_core
+  v_chat_sdk_core:
+    path: ../v_chat_sdk_core

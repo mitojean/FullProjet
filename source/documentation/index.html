@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="None" /><link rel="canonical" href="https://web.superupdev.online/" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Super up</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Home";
+        var mkdocs_page_input_path = "index.md";
+        var mkdocs_page_url = "/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="." class="icon icon-home"> Super up
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href=".">Home</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#technologies">technologies</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#requirements">requirements</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#after-purchasing-codecanyou">after purchasing (codecanyou)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#flutter">Flutter</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#lest-explain-packages">Lest explain packages</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#change-app-namepackagelogo">Change app name,package,logo</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#connect-firebase">Connect firebase</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#sconstants">SConstants</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#add-more-language">Add more language</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#ads">Ads</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#agoraio">Agora.io</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#google-api-key">Google api key</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#notifications-ios-apns">Notifications iOS (APNS)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#how-to-update-theme">how to update theme</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#first-message-page">First message page</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#second-chats-room-page">second Chats Room page</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#one-signal">one signal</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#admin-panel">Admin panel</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#publish">publish</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#backend-nodejs">Backend (Nodejs)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#requirements_1">Requirements</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#env-file">.env file</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#privacy-policy">privacy-policy</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#firebase-admin-file">firebase admin file</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#obtaining-onesignal-keys">Obtaining OneSignal Keys</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#running-the-code-without-docker">Running the Code (Without Docker)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#deploy-web">Deploy web</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#deploy-admin">Deploy admin</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#running-the-code-with-docker">Running the Code (With Docker)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#running-the-code-with-pm2">Running the Code (With Pm2)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#common-errors">Common Errors</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href=".">Super up</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Home</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="super-up-intro">Super up Intro</h1>
+<ul>
+<li>Super up is a full social chat app clone from whatsapp <code>cupertino</code> ui
+  support (<code>Android</code>, <code>ios</code>,<code>windows</code>, <code>web</code>,<code>macOS</code>)</li>
+<li>Current the <code>admin panel under build</code> you will receive it as updates for free in this project but you can install the
+  current version of it</li>
+</ul>
+<h3 id="technologies">technologies</h3>
+<ol>
+<li><a href="https://flutter.dev">Flutter</a> for clint side last version or <code>v 3.13.7</code></li>
+<li>Nodejs <code>v17.9.1</code> or later in the backend side  <a href="https://nestjs.com">Nestjs</a></li>
+<li><a href="https://socket.io">socket-io</a> for real time management</li>
+<li><a href="https://www.mongodb.com">mongodb</a> for data storage v <code>v 5.*</code> or <code>v 6.*</code> only</li>
+<li>Some backend tech Bearer token <code>JWT</code>,ORM <code>mongoose</code>,</li>
+<li><a href="https://www.agora.io">agora-io</a> for video and voice calls</li>
+<li>All media saved on the server on your vps server</li>
+<li>Google maps for share chat location</li>
+<li><code>mailer</code> for send reset password OTP</li>
+<li><code>firebase-admin</code> for push notifications</li>
+<li><code>geoip-lite</code> and <code>request-ip</code> for detect user country</li>
+</ol>
+<p>:::tip Firebase
+This project not user firebase to save any data it only use the free firebase
+FCM for push notifications only! <code>No for firebase high cost!</code>
+:::</p>
+<h3 id="requirements">requirements</h3>
+<ol>
+<li>flutter <a href="https://docs.flutter.dev/get-started/install">last-sdk</a> installed in your local machine</li>
+<li>nodejs , nestjs , mongodb installed in your vps server</li>
+<li>vps server should be at lest 2 cpu and 2GB ram and enough ssd storage at lest 20 GB you can check out this companies
+   <a href="https://www.digitalocean.com">digitalocean</a> ,<a href="https://www.hostens.com/vps-hosting">hostens</a> make sure you have
+   bandwidth more than <em>1TB</em></li>
+<li>Domain name it can be from <a href="https://www.namecheap.com">namecheap</a></li>
+<li><a href="https://firebase.google.com/">firebase</a> account for handle push notifications <code>Optional</code></li>
+<li><a href="https://www.agora.io/en/pricing">agora-account</a> if you intent to enable voice and video calls <code>Optional</code></li>
+<li><a href="https://onesignal.com/">onesignal</a> account if you intent to push notifications over onesignal instead of
+   firebase <code>Optional</code></li>
+<li><a href="https://developers.google.com/maps/documentation/javascript/get-api-key">google-api-key</a> this key used for search
+   and let users able to send locations in chat <code>Optional</code></li>
+<li><a href="https://admob.google.com/home">google-ads-banner</a> keys get banner id for <code>ios</code> and <code>android</code> if you want
+   to enable it <code>Optional</code></li>
+<li>For run ios you need paid apple developer <a href="https://developer.apple.com">account</a> (99$) per year</li>
+</ol>
+<h3 id="after-purchasing-codecanyou">after purchasing (codecanyou)</h3>
+<ul>
+<li>You will get all files for flutter project <code>(android,ios,web,macos,windows)</code></li>
+<li>You will get the flutter <code>admin panel</code> project</li>
+<li>Postman collection for all apis</li>
+<li>Full nestjs code which its backend code</li>
+<li>Full support for future updates</li>
+<li>Free support for bug fixes only (there is paid support)</li>
+<li>You can use this project to modify and edit it serve your <code>Customers</code> !</li>
+</ul>
+<p>:::tip VCHAT SDK
+This project use <a href="https://github.com/hatemragab/v_chat_sdk">v-chat-sdk</a> under the hood to serve the chat part
+This will not require you to purchase the <a href="https://v-chat-sdk.github.io/vchat-v2-docs/docs/intro">v-chat-sdk</a> it already
+impeded inside the source code
+if you are looking to implement a chat system into your exists or new flutter app then
+you should
+purchase <a href="https://codecanyon.net/item/flutter-chat-app-with-node-js-and-socket-io-mongo-db/26142700">v-chat-sdk</a>
+:::</p>
+<p>:::tip Contact me
+Iam offer paid full server side <a href="./support.md">setup</a>
+:::</p>
+<h3 id="flutter">Flutter</h3>
+<hr />
+<ul>
+<li>project structure in split packages</li>
+<li>To run the project first activate <code>melos</code></li>
+</ul>
+<pre><code>dart pub global activate melos
+</code></pre>
+<ul>
+<li>Then run this commend in the root of the project</li>
+</ul>
+<pre><code>melos bs
+</code></pre>
+<ul>
+<li>this code will run pub get for you in all packages
+  <img alt="" src="img/flutter_project_strc.png" /></li>
+<li>we have the following</li>
+<li>apps (<code>super_up_admin</code>) this is the admin panel</li>
+<li>apps (<code>super_up_app</code>) this app you should run it</li>
+<li>packages all needed packages the most important packages is the <code>super_up_core</code> the <code>s_constants.dart</code> in
+  the <code>lib/src</code></li>
+</ul>
+<h3 id="lest-explain-packages">Lest explain packages</h3>
+<ol>
+<li><code>s_translate</code> contains all arb files for <code>super_up_app</code>,<code>super_up_admin</code> projects</li>
+<li><code>super_up_core</code> contains all logic for super up app itself like shared http requests,utils,widgets (DONT UPDATE)</li>
+<li><code>v_chat_firebase</code> contains the firebase FCM only logic (DONT UPDATE)</li>
+<li>
+<p><code>v_chat_input_ui</code> this contains the ui and logic for the message input (recorder,file selector,location picker)
+   <img alt="" src="img/pk_text_field.png" /></p>
+</li>
+<li>
+<p><code>v_chat_media_editor</code> this contains the ui of media editor
+   <img alt="" src="img/pk_media_editor.png" /></p>
+</li>
+<li><code>v_chat_message_page</code> this contains the <code>ui &amp; logic</code> of message page
+   <img alt="" src="img/pk_message.png" /></li>
+<li><code>v_chat_room_page</code> this contains the <code>ui &amp; logic</code> of chat page
+   <img alt="" src="img/pk_chats.png" /></li>
+<li><code>v_chat_sdk_core</code> contains all logic for v_chat app itself like shared http requests, socket,notifications (DONT
+   UPDATE)</li>
+</ol>
+<h3 id="change-app-namepackagelogo">Change app name,package,logo</h3>
+<ul>
+<li>each app must have <code>unique</code> package name so you must change it! to be accepted in the stores</li>
+<li>this step should be done first before connect firebase</li>
+<li>we will use this package <a href="https://pub.dev/packages/rename">rename</a></li>
+<li>install by <code>flutter pub global activate rename</code></li>
+<li>to change package name <code>flutter pub global run rename --bundleId com.vchatsdk.vnotestarter</code>
+  Example =&gt; <code>pub global run rename --bundleId com.XXXXXXX.XXXXXX</code></li>
+<li>to rename the app use <code>flutter pub global run rename --appname "YOUR APP NAME"</code></li>
+<li>to update logo just update the <code>logo.png</code> in assets folder the logo must be <code>.png</code></li>
+<li>then run the code in the super_up_app <code>flutter pub run flutter_launcher_icons:main</code></li>
+<li>then this command <code>dart run flutter_native_splash:create</code></li>
+</ul>
+<h3 id="connect-firebase">Connect firebase</h3>
+<ul>
+<li>Recommend to user firebase flutter CLI which its new tool to make the firebase base connect straightforward</li>
+<li><a href="https://firebase.google.com/docs/flutter/setup?platform=android">android</a></li>
+<li><a href="https://firebase.google.com/docs/flutter/setup?platform=ios">ios</a></li>
+<li>You can connect it easily be firebase follow up this <a href="https://www.youtube.com/watch?v=G-mbqiE87Lw">video</a></li>
+<li>CLI <a href="https://firebase.google.com/docs/flutter/setup?platform=ios#install-cli-tools">tool</a></li>
+</ul>
+<h3 id="sconstants">SConstants</h3>
+<ul>
+<li>This file inside packages in [super_up_core] in <code>lib/src/s_constants.dart</code></li>
+<li>This file contains the configuration of the app</li>
+</ul>
+<pre><code class="language-dart">abstract class SConstants {
+  ///your super up base domain url
+  ///like this (example.com) not start https// or any sub domains example [superupdev.com] or server ip with port like [12.xxx.xxx:80]
+  /// case of you use server ip just put the server ip connected to the port [http://ip:port]
+  static const _productionBaseUrl = &quot;superupdev.online&quot;;
+
+  ///your app name
+  static const appName = &quot;Superup&quot;;
+
+  ///android and ios admob ids [https://developers.google.com/admob/flutter/quick-start] [https://developers.google.com/ad-manager/mobile-ads-sdk/flutter/quick-start]
+  static const androidAdUnitId = &quot;ca-app-pub-3940256099942544/6300978111&quot;;
+  static const iosAdUnitId = &quot;ca-app-pub-3940256099942544/2934735716&quot;;
+
+  ///setup video and voice calls [https://agora.io]
+  static const agoraAppId = &quot;------------------------&quot;;
+
+  ///change this to your google maps api key to enable google maps location picker
+  static const googleMapsApiKey = &quot;AIzaSyAP---------------------&quot;;
+
+  ///update this url to share the app for others
+  static const googlePlayUrl =
+      &quot;https://play.google.com/store/apps/details?id=com.app.superup&quot;;
+  static const appleStoreUrl = &quot;https://testflight.apple.com/join/F4tAbW5J&quot;;
+
+  ///get the onesignal id for push notifications [https://onesignal.com]
+  static const oneSignalAppId = &quot;********-****-****-****-**************&quot;;
+
+  ///don't update update only if you use server ip just return your server ip with port [12.xxx.xxx:80/]
+  static String get baseMediaUrl {
+    ///if you dont setup domain yet you can return the server ip like this [return Uri.parse(&quot;http://ip:port/&quot;);]
+    return &quot;https://api.$_productionBaseUrl/&quot;;
+  }
+
+  ///don't update update only if you use server ip just return your server ip with port [12.xxx.xxx:80/api/v1]
+  static Uri get sApiBaseUrl {
+    ///if you dont setup domain yet you can return the server ip like this [return Uri.parse(&quot;http://ip:port/api/v1&quot;);]
+    return Uri.parse(&quot;https://api.$_productionBaseUrl/api/v1&quot;);
+  }
+}
+</code></pre>
+<h3 id="add-more-language">Add more language</h3>
+<ul>
+<li>You can add new language by just open the [s_translation] package</li>
+<li>And inside <code>lib/i18n</code> create new file its name should follow the</li>
+<li>Standard of <code>intl_short language code.arb</code>.arb</li>
+<li>Inside this file copy the <code>intl_en.arb</code> and translate only the values and dont touch the key of the map</li>
+<li>Then, while you run the app, the new language will be added, and it will appears in the selections</li>
+</ul>
+<h3 id="ads">Ads</h3>
+<ul>
+<li>get the ids from these urls get banner id for ios and android</li>
+<li>android and ios admob
+  ids <a href="https://developers.google.com/admob/flutter/quick-start">quick-start</a>  <a href="https://developers.google.com/ad-manager/mobile-ads-sdk/flutter/quick-start">mobile-ads-sdk</a></li>
+<li>
+<p>dont forget to update the android <code>android/app/src/main/AndroidManifest.xml</code></p>
+</li>
+<li>
+<p><code>APPLICATION_ID</code> not unit id be <code>careful</code></p>
+</li>
+</ul>
+<pre><code class="language-xml">
+&lt;meta-data
+        android:name=&quot;com.google.android.gms.ads.APPLICATION_ID&quot;
+        android:value=&quot;ca-app-pub-YOUR KEY HERE!&quot;/&gt;
+</code></pre>
+<ul>
+<li>put your android appId for ads here <code>android:value=</code></li>
+<li>for Ios update the <code>ios/Runner/Info.plist</code></li>
+<li><code>&lt;key&gt;GADApplicationIdentifier&lt;/key&gt;
+  &lt;string&gt;ca-app-pub-YOUR KEY HERE!&lt;/string&gt;</code></li>
+</ul>
+<h3 id="agoraio">Agora.io</h3>
+<ul>
+<li>Create agora app and enable it copy the <code>appId</code> and enable</li>
+<li>Setup video and voice calls <a href="https://agora.io">agora</a>
+  <code>Static const agoraAppId = "------------------------";</code>
+  <img alt="" src="img/agora.png" /></li>
+<li>enable the <code>Secondary Certificate</code></li>
+</ul>
+<h3 id="google-api-key">Google api key</h3>
+<ul>
+<li>Get google api <a href="https://developers.google.com/admob/flutter/quick-start">key</a> and enable all options like <code>search</code>
+  and <code>GEO</code> locations for android and ios</li>
+<li>Don't forget to update the android <code>android/app/src/main/AndroidManifest.xml</code></li>
+</ul>
+<pre><code class="language-xml">
+&lt;meta-data
+        android:name=&quot;com.google.android.geo.API_KEY&quot;
+        android:value=&quot;YOUR API_KEY HERE!&quot;/&gt;
+</code></pre>
+<ul>
+<li>and for ios</li>
+<li><code>ios/Runner/AppDelegate.swift</code></li>
+<li>GMSServices.provideAPIKey(<code>YOUR API_KEY HERE!</code>)</li>
+</ul>
+<h3 id="notifications-ios-apns">Notifications iOS (APNS)</h3>
+<ul>
+<li>
+<p>Login to your Apple Developer Account,(if you don’t have, you need to create one to be able to test, publish ios app).</p>
+</li>
+<li>
+<p>Navigate to <code>Certificates, Identifiers &amp; Profiles &gt; Keys &gt;</code> Add New from the left menu.</p>
+</li>
+</ul>
+<p><img alt="" src="img/xcode1.png" /></p>
+<ul>
+<li>Register a New key.</li>
+<li>Set the key name as <code>FirebaseAPNS</code>.</li>
+<li>Tick “Apple Push Notification Services (APNs)”</li>
+<li>Click Continue to register it.</li>
+<li><img alt="" src="img/xcode2.png" /></li>
+<li>Once the key is registered follow below steps:</li>
+<li>Copy the Team ID (keep it aside)</li>
+<li>Download the Auth key File (keep it aside)</li>
+<li>Copy the Key ID (keep it aside)</li>
+<li>Click “Done” to complete.</li>
+<li><img alt="" src="img/xcode3.png" /></li>
+<li>Open Firebase Dashboard &gt; Project Settings</li>
+<li><img alt="" src="img/xcode4.png" /></li>
+<li>Click on “Cloud Messaging” tab. For the iOS app, click “Upload”.</li>
+<li><img alt="" src="img/xcode5.png" /></li>
+<li>Click on “Browse” to upload the recently downloaded Auth key file.</li>
+<li>Paste the Key ID</li>
+<li>Paste the Team ID</li>
+<li>Click upload to register it.
+  <img alt="" src="img/xcode6.png" /></li>
+<li>All done now with ios <code>notifications</code></li>
+</ul>
+<h3 id="how-to-update-theme">how to update theme</h3>
+<ul>
+<li>For <code>dark</code> theme use it already inside the <code>main.dart</code> just update it  <code>dont delete it!</code></li>
+<li>Of course you can update the theme direct from the code if you have much experience</li>
+</ul>
+<h4 id="first-message-page">First message page</h4>
+<pre><code>darkTheme: ThemeData(
+          extensions: [
+            VMessageTheme.dark().copyWith(
+            ///see  options!
+            ),
+          ],
+        ),
+</code></pre>
+<ul>
+<li>for <code>light</code> theme use</li>
+</ul>
+<pre><code>   theme: ThemeData(
+            extensions: [
+                 VMessageTheme.dark().copyWith(
+                   ///see options!
+            ),
+            ],
+          ),
+</code></pre>
+<h4 id="second-chats-room-page">second Chats Room page</h4>
+<ul>
+<li>for <code>dark</code> theme use</li>
+</ul>
+<pre><code>darkTheme: ThemeData(
+          extensions: [
+            VRoomTheme.light().copyWith(
+              ///see  options!
+
+              ),
+          ],
+        ),
+</code></pre>
+<ul>
+<li>for <code>light</code> theme use</li>
+</ul>
+<pre><code>   theme: ThemeData(
+            extensions: [
+            VRoomTheme.light().copyWith(
+              ///see options!
+
+              ),
+            ],
+          ),
+</code></pre>
+<h3 id="one-signal">one signal</h3>
+<ul>
+<li>Get the onesignal id for push notifications [https://onesignal.com] see flutter docs</li>
+<li>then in <code>apps/super_up_app/lib/v_chat_v2/v_chat_config.dart</code> enable OneSignal push by add this <code>constructor</code></li>
+<li>don't forget to update the app id in <code>SConstants.oneSignalAppId</code></li>
+</ul>
+<pre><code>      vPush: VPush(
+        enableVForegroundNotification: true,
+        vPushConfig: const VLocalNotificationPushConfig(),
+        ///if you support fcm push notifications
+        fcmProvider: VChatFcmProver(),
+        ///if you support OneSignal push notifications **THIS**
+        oneSignalProvider: VChatOneSignalProver(
+          appId: SConstants.oneSignalAppId,
+        ),
+      ),
+</code></pre>
+<p>:::fin
+If firebase is available into your country its recommended to use it
+for notifications push which its 100% free service with no limits!
+:::</p>
+<h3 id="admin-panel">Admin panel</h3>
+<ol>
+<li>super up introduce admin panel to control the app</li>
+<li>there are two types of login admin login and viewer login</li>
+<li>you will have two passwords for the admin one for admin another for viewer</li>
+<li>admin can do anything viewer can only see the data he cant edit it</li>
+<li>you can set the password for admin and viewer from the <code>.env.production</code> file in the backend files this file is
+   hidden
+   <code>#Admin panel passwords be carfaul
+   ControlPanelAdminPassword= "xxxxxxxxxxxxx" # put strong password for admin who can edit and update any thing in the app
+   ControlPanelAdminPasswordViewer= "xxxxxxxxxx-xxxx" # put strong password for admin that can only read(see ,users data,chats data etc...) he cannot update any thing</code></li>
+<li>You can change it any tine you want to re deploy your app!</li>
+</ol>
+<h3 id="publish">publish</h3>
+<ul>
+<li>
+<p>open terminal inside the <code>super_up_app</code> folder</p>
+</li>
+<li>
+<p>for android, you can run <code>flutter build apk --split-per-abi</code> for
+   store <a href="https://docs.flutter.dev/deployment/android">publish</a></p>
+</li>
+<li>for web, you can run <code>flutter build web --web-renderer html</code> see backend section for how to upload</li>
+<li>for ios, you can run <a href="https://docs.flutter.dev/deployment/ios">ios</a></li>
+</ul>
+<p>:::danger
+Doesn't update any package version unless you know what to do
+:::</p>
+<h3 id="backend-nodejs">Backend (Nodejs)</h3>
+<hr />
+<h3 id="requirements_1">Requirements</h3>
+<ol>
+<li>Person who has experience to deal with ubuntu server and deploy otherwise you can contact <a href="mailto:hatemragapdev@gmail.com">me</a> iam offer best upload experience</li>
+<li>Install Node.js (version <code>v16.x</code> or to <code>19.x</code>) and npm. Check the Node.js version using <code>node -v</code>.</li>
+<li>
+<p>Install only if you not <code>docker user</code> cross-env <code>npm i -g cross-env</code> for managing production or development
+   environments and pm2 for manage production deploy by <code>npm i -g pm2</code>
+   CLI (<code>npm install -g @nestjs/cli</code>).</p>
+</li>
+<li>
+<p>Install <a href="https://www.mongodb.com/try/download/community-kubernetes-operator">MongoDB</a> (minimum <code>v4.4</code>,
+   recommended <code>v6</code>).</p>
+</li>
+</ol>
+<h3 id="env-file">.env file</h3>
+<pre><code># you can out local url or docker url or url of mongo in another service
+DB_URL=&quot;YOUR_MONGO_URL&quot;
+
+# Dont update it ever after you set it! if you do all users will logout!!!
+JWT_SECRET=&quot;STRONG_PASSWORD&quot;
+
+# Dont update it ever after you set it! if you do all users will logout!!!
+issuer=&quot;your gmail&quot;
+# Dont update it ever after you set it! if you do all users will logout!!!
+audience=&quot;your gmail&quot;
+
+NODE_ENV=&quot;production&quot; # dont update it
+EDIT_MODE =&quot;false&quot; # set to false
+ignoreEnvFile=&quot;false&quot;  # set to true if you will inject the env values from system os
+PORT=80 //exposed port of node js
+
+#Admin panel passwords be carfaul
+ControlPanelAdminPassword= &quot;xxxxxxxxxxxxx&quot; # put strong password for admin who can edit and update any thing in the app
+ControlPanelAdminPasswordViewer= &quot;xxxxxxxxxx-xxxx&quot; # put strong password for admin that can only read(see ,users data,chats data etc...) he cannot update any thing
+
+isOneSignalEnabled =&quot;false&quot; # set to true if you can provide oneSignalAppId and oneSignalApiKey to enable push by onesignal
+isFirebaseFcmEnabled =&quot;false&quot; # set to true if you provide the firebase admin.json file
+
+#set onesignal data if you support it by set isOneSignalEnabled to true
+oneSignalAppId=&quot;xxxxxxxxx-xxxxx-xxxxx-xxxx-xxxxxxxxx&quot;
+#set onesignal data if you support it by set isOneSignalEnabled to true
+oneSignalApiKey=&quot;xxxxxxxxx&quot;
+
+# SET THE Email data to let use use forget password OTP
+EMAIL_HOST=&quot;EMAIL HOST FROM THE PROVIDER COMPANY&quot;
+EMAIL_USER=&quot;YOUR EMAIL USER&quot;
+EMAIL_PASSWORD=&quot;EMAIL USER PASSWORD&quot;
+
+# SET AGORA API KEYS
+AGORA_APP_ID=&quot;&quot;
+# Get this from agora app console `Primary Certificate` value
+AGORA_APP_CERTIFICATE=&quot;&quot;
+</code></pre>
+<h3 id="privacy-policy">privacy-policy</h3>
+<ul>
+<li>You can update your privacy privacy page in the source code inside</li>
+<li><code>http://localhost:3000/privacy-policy.html</code> this will be the <code>privacy-policy</code> of your app</li>
+<li>You can edit it inside <code>public/privacy-policy.html</code></li>
+<li>You can edit the home inside <code>public/home.html</code> you can access it <code>http://localhost:3000</code></li>
+</ul>
+<h3 id="firebase-admin-file">firebase admin file</h3>
+<ol>
+<li>Make sure the firebase account is the same as the one used in flutter app.</li>
+<li>To ensure chat notifications work properly, follow <a href="https://www.youtube.com/watch?v=cXOzbKDXTh0">this video</a> to
+   obtain the <code>firebase.adminsdk.json</code> file.</li>
+<li>Replace the existing <code>firebase.adminsdk.json</code> file with your new one.</li>
+<li>open your account in <code>firebase</code> then enable the <code>Cloud Messaging API (Legacy)</code> from
+   <img alt="" src="img/firebase1.png" />
+   <img alt="" src="img/firebase2.png" /></li>
+</ol>
+<h3 id="obtaining-onesignal-keys">Obtaining OneSignal Keys</h3>
+<ol>
+<li>Create a Firebase account and follow <a href="https://www.youtube.com/watch?v=FOkgfsTwvC4">this video</a> to obtain OneSignal
+   keys.</li>
+<li>Update the following fields with your OneSignal keys:</li>
+</ol>
+<p><code>oneSignalAppId="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxx"
+   oneSignalApiKey="xxxxxxxxxxxx"</code></p>
+<h3 id="running-the-code-without-docker">Running the Code (Without Docker)</h3>
+<ul>
+<li>
+<p>You should be familiar with ubuntu server setup</p>
+</li>
+<li>
+<p>Install ubuntu server v 20.* and later</p>
+</li>
+<li>Open a terminal in the <code>backend</code> root folder.</li>
+<li>Run <code>npm i</code> or <code>npm i --force</code> if issues occur.</li>
+<li>Generate a <code>dist</code> folder <code>npm run build</code>.</li>
+<li>Run <code>npm run start:prod</code>for live console logs for just make sure your server is configure well</li>
+<li>if you run in production mode. in your vps server then you should</li>
+<li>then stop and run this run <code>pm2 start ecosystem.config.js --only normal --env production</code>.for background serve</li>
+<li>to see logs run <code>pm2 logs</code></li>
+<li>If you see <code>app run in production,</code> your code is production-ready.</li>
+<li>Access the development server at <code>localhost:80</code> and production server at port <code>80</code> Update the port
+    in <code>.env.production</code> if necessary.</li>
+<li>Update the <code>PORT</code> in the <code>.env</code> file if using Docker, and ensure you update the environment variable in the OS (env).</li>
+<li>you need to install <code>nginx</code> and connect domain to your server for security and more speed!</li>
+<li>dont forget to add the websocket support for nginx while you configure it</li>
+<li>inside the location of your server block don't forget to add this to enable websocket support</li>
+</ul>
+<pre><code> proxy_set_header Upgrade $http_upgrade;
+ proxy_set_header Connection &quot;upgrade&quot;;
+ proxy_http_version 1.1;
+ proxy_set_header Host $host;
+ proxy_set_header X-Real-IP $remote_addr;
+ proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+ proxy_set_header X-Forwarded-Proto $scheme;
+</code></pre>
+<h3 id="deploy-web">Deploy web</h3>
+<ol>
+<li>run the flutter code to build the web version inside the <code>super_up_app</code> folder</li>
+<li>run this code <code>flutter build web --web-renderer html</code></li>
+<li>now you can find the html folder inside the build folder you need to upload it to your server</li>
+<li>your server can your vps server you can use nginx to deploy your web code and admin code</li>
+</ol>
+<h3 id="deploy-admin">Deploy admin</h3>
+<ol>
+<li>run the flutter code to build the web version inside the <code>super_up_admin</code> folder</li>
+<li>run this code <code>flutter build web --web-renderer html</code></li>
+<li>now you can find the html folder inside the build folder you need to upload it to your server</li>
+<li>your server can your vps server you can use nginx to deploy your web code and admin code</li>
+</ol>
+<h3 id="running-the-code-with-docker">Running the Code (With Docker)</h3>
+<ol>
+<li>Install <a href="https://www.docker.com">Docker</a> and Docker Compose.</li>
+<li>update <code>.env.production</code> this keys <code>DB_URL=</code> from <code>mongodb://127.0.0.1:27017/super_up</code>
+   to <code>DB_URL=mongodb://myuser_xxx:mypassword_xxx@mongo:27017/super_up?authSource=admin</code></li>
+<li>Run the <code>Dockerfile</code> if Docker is already installed on your system. Note that this only sets up v_chat_sdk and
+   doesn't include MongoDB or Redis. You need to manage these separately OR.</li>
+<li>Use a <code>compose file</code> witch manage all dependency together.</li>
+<li>Run <code>docker-compose up</code> to start the containers and view logs, or run <code>docker-compose up -d</code> to run in the
+   background.</li>
+</ol>
+<h3 id="running-the-code-with-pm2">Running the Code (With Pm2)</h3>
+<ul>
+<li><a href="https://pm2.keymetrics.io/docs/usage/pm2-doc-single-page">pm2</a> is a popular framework for run the nodejs applications in background with high performance</li>
+<li>You need first to install it by <code>npm install pm2@latest -g</code></li>
+<li>You run the app is already ready to run with pm2 by run <code>npm run pm2</code></li>
+<li>To see the logs in real time you can run <code>pm2 logs</code></li>
+</ul>
+<h3 id="common-errors">Common Errors</h3>
+<ol>
+<li>
+<p>If you encounter the error <code>ERROR [ExceptionHandler] Configuration key "JWT_SECRET" does not exist</code>, it means NestJS
+   cannot read your <code>.env.production</code> file.</p>
+<ul>
+<li>To fix this, ensure you have injected the environment variable or that <code>.env.production</code> exists in the root of the
+  project. It may be ignored by .git.</li>
+</ul>
+</li>
+<li>
+<p>If you see the
+   error <code>The default Firebase app does not exist. Make sure you call initializeApp() before using any of the Firebase services</code>
+   ,it means you have enabled FCM but have not <a href="https://www.youtube.com/watch?v=cXOzbKDXTh0">configured</a> it.</p>
+</li>
+</ol>
+<p>:::tip Contact me
+Iam offer paid full server side setup See <a href="support.md">Plans</a>
+:::</p>
+<h1 id="get-support">Get Support</h1>
+<hr />
+<p><strong>Choose Your Perfect Plan for Super Up Chat App Deployment</strong></p>
+<p><img alt="" src="img/plans.jpg" /></p>
+<p>Welcome to Super Up Chat App services! Our chat application, crafted with Flutter, provides a seamless multi-platform
+communication experience. Whether you're just starting or looking to expand your reach, we have a plan that fits your
+needs.</p>
+<h3 id="basic-plan-100-nodejs-backend-only"><strong>Basic Plan - $100 (Node.js Backend Only)</strong></h3>
+<p>Ideal for beginners who want to set up the server side.</p>
+<p><strong>Features:</strong></p>
+<ul>
+<li>Purchase your own <code>domain name</code> and <code>VPS server</code>.</li>
+<li>Complete server side configuration including:<ul>
+<li>MongoDB setup with security optimizations.</li>
+<li>Free SSL certification installation for secure connections.</li>
+<li>Full Node.js environment setup.</li>
+</ul>
+</li>
+<li><strong>Delivery Time:</strong> Ready within 1 to 2 days.</li>
+</ul>
+<h3 id="standard-plan-200-android-web-admin-panel"><strong>Standard Plan - $200 (Android, Web, Admin Panel)</strong></h3>
+<p>A step-up for those ready to launch their Android and Web presence.</p>
+<p><strong>Features:</strong></p>
+<ul>
+<li>Everything from the Basic Plan.</li>
+<li>Flutter app configurations tailored to your brand:<ul>
+<li>Custom app package name, logo, and app name.</li>
+<li>Compilation of the Android APK, Web Chat, and Admin Panel.</li>
+<li>Integration of third-party services (Agora.io, Google Ads, Google Maps, Firebase).</li>
+</ul>
+</li>
+<li>Assistance with publishing the app on the Google Play Console (<em>Google Developer Account fee of $25 not included</em>).</li>
+<li><strong>Delivery Time:</strong> Ready within 1 to 4 days.</li>
+</ul>
+<h3 id="premium-plan-300-android-web-admin-panel-windows-ios-macos"><strong>Premium Plan - $300 (Android, Web, Admin Panel, Windows, iOS, macOS)</strong></h3>
+<p>The full package for maximum reach across all platforms.</p>
+<p><strong>Features:</strong></p>
+<ul>
+<li>Inclusive of all offerings in the Basic and Standard Plans.</li>
+<li>Brand customization extends to iOS, macOS, and Windows versions.</li>
+<li>Compilation and build for the .ipa and macOS app versions.</li>
+<li>Publishing support for iOS, macOS, and Windows (<em>Apple Developer Account fee of $100 and Microsoft Account fees not
+  included</em>).</li>
+<li><strong>Delivery Time:</strong> Ready within 3 to 7 days.</li>
+</ul>
+<hr />
+<p>Absolutely, you can conclude your plans with an option for customization to meet specific business needs like this:</p>
+<p><strong>Tailored Solutions for Your Business:</strong></p>
+<p>In addition to the above plans, we also offer a <strong>full app rebuild service</strong> to fit the unique demands of your business.
+Whether you require specific features, design changes, or unique integrations, we can craft a solution that aligns
+perfectly with your vision.</p>
+<ul>
+<li><strong>Custom Rebuild:</strong> Contact us with your requirements, and we will provide you with a bespoke quote.</li>
+<li><strong>Flexible Solutions:</strong> We are committed to flexibility and will work closely with you to ensure that the final
+  product meets your business objectives.</li>
+</ul>
+<p>Reach out to us through our Envato profile for a consultation and custom quote.</p>
+<p>Let's create a chat app that's uniquely yours!</p>
+<hr />
+<p>Adding this section provides a complete spectrum of services from standard plans to fully customized solutions, catering
+to a wider range of customers and their varying needs.</p>
+<p><strong>Additional Information:</strong></p>
+<ul>
+<li><strong>Support:</strong> All plans come with basic installation support and guidance.</li>
+<li><strong>Customization:</strong> Please provide all necessary branding materials upon purchase.</li>
+<li><strong>Accounts:</strong> Costs associated with Google, Apple, and Microsoft developer accounts are not included in the plan
+  prices.</li>
+<li><strong>Timeframe:</strong> The indicated delivery times are from the start of the project.</li>
+</ul>
+<h2 id="lets-launch-your-chat-app-together">Let's launch your chat app together!</h2>
+<p>:::tip Purchase
+To get Support you need to contact me at
+Support email <code>hatemragapdev@gmail.com</code>
+OR Reach out to us through our <code>Envato</code> profile
+Or on Skype at <code>live:.cid.607250433850e3a6</code>
+:::</p>
+<p>:::tip Purchase_2
+You should purchase the app first from codecanyou
+and send your purchase key in the email so i can process the support for you
+:::</p>
+<hr />
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = ".";</script>
+    <script src="js/theme_extra.js"></script>
+    <script src="js/theme.js"></script>
+      <script src="search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
+
+<!--
+MkDocs version : 1.5.3
+Build Date UTC : 2023-11-15 17:32:50.386515+00:00
+-->
